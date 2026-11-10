@@ -1,202 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="pt-BR">
 <head>
-  <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,400&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./src/assets/css/style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Em breve</title>
+  <meta name="description" content="Em breve.">
+  <style>
+    :root { --bg: #f6f1ea; --bg-2: #f1e9df; --text: #2b1d15; --muted: #6b584b; color-scheme: light; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #16110e; --bg-2: #120e0b; --text: #f6eee6; --muted: #b3a194; color-scheme: dark; }
+    }
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: grid;
+      place-items: center;
+      padding: 16px;
+      box-sizing: border-box;
+      background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      text-align: center;
+    }
+    h1 { margin: 0; font-size: clamp(36px, 9vw, 64px); letter-spacing: -0.03em; font-weight: 800; }
+    p { margin: 10px 0 0; color: var(--muted); font-size: 17px; }
+  </style>
 </head>
-<script src="main.js"></script>
-
 <body>
-  <div id="fundo-externo">
-    <div id="fundo">
-      <img src="./src/assets/img/Frame2.svg" alt="" />
-    </div>
-  </div>
-  <div id="site">
-    <div class="main-header">
-      <div class="text-header" id="aligned">
-        <span id="first-line">Olá, eu sou a Yas</span>
-        <span id="second-line">meu nome de verdade é </span>
-        <span id="name">Yasmim Correa</span>
-        <span id="third-line">
-          < eu sou programadora web e mobile />
-          </sou>
-        </span>
-        <span id="fourth-line">e às vezes designer</span>
-        <hr />
-        <span id="pharagraph">Comecei minha carreira como programadora front-end,
-          já trabalhei com Java, Javascript, AngularJS, React, React Native, GraphQL e SQL e os famosos HTML e CSS.
-          Atualmente,
-          trabalho com Vue no front-end, Node no back-end e Neo4J como banco de dados. Já criei identidades visuais de
-          vários
-          projetos nas empresas que trabalhei, por me destacar também como designer e, desde então, tem sido uma
-          experiência incrível.
-          Além disso, estou sempre buscando novos conhecimentos sem deixar de lado as bases sólidas da programação,
-          o que tem me proporcionado crescer exponencialmente, enquanto adquiro novos conhecimentos.
-          Me considero autodidata e sou muito feliz com o que eu faço. Sou fascinada por Física e por tudo que é
-          relacionado ao Universo
-          e à Astronomia, um dia espero poder unir minhas duas paixões e viver disso. Lembre-se: quando você
-          souber qual é exatamente a pergunta,
-          você saberá o que significa a resposta.
-        </span>
-      </div>
-    </div>
-    <div id="about-me">
-      <div id="centralize">
-        <span id="skills">
-          Skills
-
-        </span>
-      </div>
-    </div>
-    <div class="skills-container">
-
-      <div id="centralize">
-        <img style="width: 150px;margin-bottom: 10px;" src="./src/assets/img/starJS.svg">
-      </div>
-      <div id="centralize">
-        <img style="width: 150px;margin-top: 10px;" src="./src/assets/img/reactStar.svg">
-      </div>
-      <div id="centralize">
-        <img style="width: 150px;margin-bottom: 10px;" src="./src/assets/img/vueStar.svg">
-      </div>
-      <div id="centralize">
-        <img style="width: 150px;margin-top: 10px" src="./src/assets/img/rnStar.svg">
-      </div>
-      <div id="centralize">
-        <img style="width: 150px;margin-bottom: 10px;" src="./src/assets/img/nodeStar.svg">
-      </div>
-      <div id="centralize">
-        <img style="width: 150px;margin-top: 10px" src="./src/assets/img/design.svg">
-      </div>
-
-    </div>
-    <div class="telescope-icon">
-      <img id="imgTelescope" style="width: 150px" src="./src/assets/img/telescopio.svg">
-    </div>
-    <div>
-
-      <div id="about-me">
-        <div id="centralize">
-          <span id="skills">
-            Projetos
-          </span>
-        </div>
-      </div>
-    </div>
-    <!-- carrossel -->
-    <div class="testimonials">
-      <div class="scroller">
-        <div class="item">
-          <div class="card">
-            <p>
-              <a target="_blank" href="https://conteudo.afferolab.com.br/afferolabflow">
-                <img src="./src/assets/img/flow.jpg" alt="">
-              </a>
-            </p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card">
-            <p>
-              <a target="_blank" href="https://leadcast.afferolab.com.br/">
-                <img src="./src/assets/img/leadcast.png" alt="">
-              </a>
-            </p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card">
-            <p>
-              <a target="_blank" href="https://www.e3mob.com.br/">
-                <img src="./src/assets/img/0.png" alt="">
-              </a>
-            </p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card">
-            <p>
-              <a target="_blank" href="http://cotaflix.com/">
-                <img src="./src/assets/img/cotaflix.svg" >
-              
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <span class="btn prev">
-        <span id="buttons">
-          &lt;
-        </span>
-      </span>
-      <span class="btn next">
-        <span id="buttons">
-          &gt;
-        </span>
-      </span>
-    </div>
-    <div id="about-me">
-      <div id="centralize">
-        <span id="where-am-i">
-          Onde me encontrar
-
-        </span>
-      </div>
-    </div>
-    <div class="container-items">
-
-      <div id="circle">
-        <a target="_blank" href="http://github.com/ygcorrea">
-          <img id="imgCircle" src="./src/assets/img/github.png" alt="">
-          </a>
-      </div>
-      <div id="circle">
-        <a target="_blank" href="https://www.linkedin.com/in/ygcorrea/">
-          <img id="imgCircle" src="./src/assets/img/linkedin.png" alt="">
-          </a>
-      </div>
-      <div id="circle">
-        <a target="_blank" href="mailto:g.yascorrea@gmail.com">
-          <img id="imgCircle" src="./src/assets/img/gmail.png" alt="">
-          </a>
-      </div>
-      
-
-    </div>
-    <script>
-      const testimonials = document.querySelector('.testimonials');
-      const scroller = testimonials.querySelector('.scroller');
-      const nextBtn = testimonials.querySelector('.btn.next');
-      const prevBtn = testimonials.querySelector('.btn.prev');
-      const itemWidth = testimonials.querySelector('.item').clientWidth;
-
-      nextBtn.addEventListener('click', scrollToNextItem);
-      prevBtn.addEventListener('click', scrollToPrevItem);
-
-      function scrollToNextItem() {
-        if (scroller.scrollLeft < (scroller.scrollWidth - itemWidth))
-          // The scroll position is not at the beginning of last item
-          scroller.scrollBy({ left: itemWidth, top: 0, behavior: 'smooth' });
-        else
-          // Last item reached. Go back to first item by setting scroll position to 0
-          scroller.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
-      }
-      function scrollToPrevItem() {
-        if (scroller.scrollLeft != 0)
-          // The scroll position is not at the beginning of first item
-          scroller.scrollBy({ left: -itemWidth, top: 0, behavior: 'smooth' });
-        else
-          // This is the first item. Go to last item by setting scroll position to scroller width
-          scroller.scrollTo({ left: scroller.scrollWidth, top: 0, behavior: 'smooth' });
-      }
-    </script>
+  <main>
+    <h1>Em breve</h1>
+    <p>Novidades chegando por aqui.</p>
+  </main>
 </body>
-
 </html>
